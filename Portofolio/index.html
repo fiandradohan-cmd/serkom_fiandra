@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio">
+  <meta name="keywords" content="Portofolio">
+  <meta name="author" content="Fiandra">
+
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/user (1).png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .hero {
+      background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+      min-height: 100vh;
+      color: white;
+    }
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 5px solid rgba(255,255,255,0.3);
+    }
+    .skill-badge {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: #0d6efd;
+      border-radius: 2px;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+    }
+    footer { background: #212529; }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Fiandra</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Keahlian</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Pendidikan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sertifikat">Sertifikat</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project">Proyek</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pengalaman">Pengalaman</a></li>
+          <li class="nav-item"><a class="nav-link" href="#artikel">Artikel</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero d-flex align-items-center">
+    <div class="container text-center text-lg-start">
+      <div class="row align-items-center">
+        <div class="col-lg-7 order-2 order-lg-1">
+          <p class="mb-1 opacity-75">Halo, saya</p>
+          <h1 class="display-4 fw-bold mb-2">Fiandra Dohan Hidayat</h1>
+          <h4 class="mb-3 opacity-90">Junior Web Developer | Siswa RPL</h4>
+          <p class="lead mb-4 opacity-75 col-lg-10">
+            Siswa SMKN 1 Jenangan, Ponorogo jurusan Rekayasa Perangkat Lunak.
+            Passionate dalam pengembangan website dan aplikasi berbasis web.
+          </p>
+          <a href="#contact" class="btn btn-light btn-lg me-2 mb-2">Hubungi Saya</a>
+          <a href="#project" class="btn btn-outline-light btn-lg mb-2">Lihat Proyek</a>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center mb-4 mb-lg-0">
+          <img src="assets/img/foto-profil.jpg" class="rounded-circle profile-img shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title fw-bold">Tentang Saya</h2>
+      <div class="row">
+        <div class="col-lg-8">
+          <p>
+            Saya adalah siswa <strong>SMKN 1 Jenangan, Ponorogo</strong> jurusan
+            <strong>Rekayasa Perangkat Lunak</strong> yang memiliki minat besar di bidang
+            pengembangan aplikasi dan teknologi informasi.
+          </p>
+          <p>
+            Menguasai dasar-dasar pemrograman seperti <strong>HTML, CSS, JavaScript, dan PHP</strong>
+            serta memahami konsep database <strong>MySQL</strong>. Terbiasa mengerjakan proyek
+            berbasis web secara individu maupun tim. Memiliki semangat belajar tinggi, disiplin,
+            dan siap berkontribusi melalui program magang.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i> Kauman, Ponorogo</li>
+            <li class="mb-2"><i class="fas fa-envelope text-primary me-2"></i> fiandradohan@gmail.com</li>
+            <li class="mb-2"><i class="fas fa-phone text-primary me-2"></i> +62 852-3571-1636</li>
+            <li class="mb-2"><i class="fas fa-graduation-cap text-primary me-2"></i> SMKN 1 Jenangan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title fw-bold">Keahlian</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card border-0 shadow-lg h-100">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-semibold mb-3"><i class="fas fa-code text-primary me-2"></i>Hard Skills</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-primary skill-badge">HTML</span>
+                <span class="badge bg-primary skill-badge">CSS</span>
+                <span class="badge bg-primary skill-badge">JavaScript</span>
+                <span class="badge bg-primary skill-badge">PHP</span>
+                <span class="badge bg-primary skill-badge">MySQL</span>
+                <span class="badge bg-primary skill-badge">Responsive Web</span>
+                <span class="badge bg-primary skill-badge">CRUD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card border-0 shadow-lg h-100">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-semibold mb-3"><i class="fas fa-users text-primary me-2"></i>Soft Skills</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-secondary skill-badge">Kerja Tim</span>
+                <span class="badge bg-secondary skill-badge">Komunikatif</span>
+                <span class="badge bg-secondary skill-badge">Adaptif</span>
+                <span class="badge bg-secondary skill-badge">Disiplin</span>
+                <span class="badge bg-secondary skill-badge">Problem Solving</span>
+                <span class="badge bg-secondary skill-badge">Manajemen Waktu</span>
+                <span class="badge bg-secondary skill-badge">Cepat Belajar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="py-5">
+    <div class="container">
+      <h2 class="section-title fw-bold">Pendidikan</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card border-0 shadow-lg card-hover h-100">
+            <div class="card-body p-4">
+              <span class="badge bg-primary mb-2">2024 - Sekarang</span>
+              <h5 class="fw-semibold">SMKN 1 Jenangan, Ponorogo</h5>
+              <p class="text-primary mb-2">Rekayasa Perangkat Lunak</p>
+              <p class="text-muted mb-0 small">Fokus pengembangan website, aplikasi web, HTML, CSS, JS, PHP, dan database.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card border-0 shadow-lg card-hover h-100">
+            <div class="card-body p-4">
+              <span class="badge bg-secondary mb-2">2021 - 2024</span>
+              <h5 class="fw-semibold">SMPN 2 Kauman, Ponorogo</h5>
+              <p class="text-muted mb-2">Sekolah Menengah Pertama</p>
+              <p class="text-muted mb-0 small">Menyelesaikan pendidikan menengah pertama dan mulai mengembangkan minat di bidang teknologi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sertifikat" class="py-5">
+    <div class="container">
+      <h2 class="section-title fw-bold">Sertifikat</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card border-0 shadow-lg card-hover h-100">
+            <div class="card-body text-center p-4">
+              <span class="badge bg-primary mb-2">Kunjungan Industri</span>
+              <h5 class="fw-semibold">GAMELAB Indonesia</h5>
+              <p class="text-muted mb-2">Salatiga, 05 Januari 2026</p>
+              <a href="assets/img/GL7645033748_certificate.pdf" class="btn btn-sm btn-outline-primary" id="link-usaha">Lihat Sertifikat →</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card border-0 shadow-lg card-hover h-100">
+            <div class="card-body text-center p-4">
+              <span class="badge bg-primary mb-2">Praktek Kerja Lapangan</span>
+              <h5 class="fw-semibold">CV. DegeWeb Digital Agency</h5>
+              <p class="text-muted mb-2">06 April - 11 September 2026</p>
+              <a href="assets/img/GL7645033748_certificate.pdf" class="btn btn-sm btn-outline-primary" id="link-usaha">Lihat Sertifikat →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="project" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title fw-bold">Proyek</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card border-0 shadow-lg card-hover h-100">
+            <div class="card-body p-4">
+              <h5 class="fw-semibold">Website Usaha Karya Tangan</h5>
+              <p class="text-muted small">Website dinamis untuk toko produk karya tangan (penjahit / rajut / batik) dengan fitur CRUD.</p>
+              <div class="mb-3">
+                <span class="badge text-bg-light border">HTML</span>
+                <span class="badge text-bg-light border">CSS</span>
+                <span class="badge text-bg-light border">JS</span>
+                <span class="badge text-bg-light border">PHP</span>
+                <span class="badge text-bg-light border">MySQL</span>
+              </div>
+              <a href="http://localhost:5173/" class="btn btn-sm btn-outline-primary" id="link-usaha">Lihat Website →</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card border-0 shadow-lg card-hover h-100">
+            <div class="card-body p-4">
+              <h5 class="fw-semibold">Portfolio Pribadi</h5>
+              <p class="text-muted small">Website statis portfolio pribadi dengan desain modern dan responsif menggunakan Bootstrap.</p>
+              <div class="mb-3">
+                <span class="badge text-bg-light border">HTML</span>
+                <span class="badge text-bg-light border">CSS</span>
+                <span class="badge text-bg-light border">Bootstrap</span>
+              </div>
+              <a href="#home" class="btn btn-sm btn-outline-primary">Lihat Website →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pengalaman" class="py-5">
+    <div class="container">
+      <h2 class="section-title fw-bold">Pengalaman</h2>
+      <div class="row">
+        <div class="col">
+          <img src="assets/img/fotopkl.jpeg" style="width: 300px;" >
+        </div>
+        <div class="col-8">
+          <p> Melaksanakan Praktik Kerja Lapangan selama <strong>5 bulan</strong> di DegeWeb Digital Agency. Mempelajari dan terlibat dalam proses pengembangan website, aplikasi, serta layanan digital lainnya.</p>
+          <p>- Pengembangan website dan aplikasi.</p>
+          <p>- Kolaborasi tim dalam proyek digital.</p>
+          <p>- Penerapan teknologi web di lingkungan industri.</p>
+          <span class="badge text-bg-primary border">Web Development</span>
+          <span class="badge text-bg-primary border">Digital Agency</span>
+          <span class="badge text-bg-primary border">Teamwork</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="artikel" class="py-5">
+    <div class="container">
+      <h2 class="section-title fw-bold">Artikel</h2>
+      <div class="row">
+        <div class="col-lg">
+          <p>
+            Saya mulai mengenal dunia pemrograman saat masuk jurusan Rekayasa Perangkat Lunak di SMKN 1 Jenangan. Awalnya semua terasa asing, mulai dari HTML, CSS, hingga JavaScript.
+            Perlahan saya belajar membangun halaman web sederhana, mencoba membuat tampilan yang responsif, lalu mengenal dasar PHP dan database. Prosesnya tidak selalu mudah, tetapi setiap error yang muncul justru menjadi pelajaran berharga.
+            Melalui latihan dan proyek kecil, saya semakin memahami bagaimana sebuah website bekerja dari sisi tampilan maupun logika. Pengalaman ini membuat saya semakin tertarik untuk terus mengembangkan kemampuan di bidang web development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="section-title fw-bold">Kontak</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-lg text-center h-100">
+            <div class="card-body p-4">
+              <i class="bi bi-envelope fs-1"></i>
+              <h6 class="fw-semibold">Email</h6>
+              <h5 class="text-muted small text-decoration-none">fiandradohan@gmail.com</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-lg text-center h-100">
+            <div class="card-body p-4">
+              <i class="bi bi-telephone fs-1"></i>
+              <h6 class="fw-semibold">Telepon</h6>
+              <h5 class="text-muted small text-decoration-none">+62 852-3571-1636</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-lg text-center h-100">
+            <div class="card-body p-4">
+              <i class="bi bi-geo-alt fs-1"></i>
+              <h6 class="fw-semibold">Alamat</h6>
+              <p class="text-muted small mb-0">Jl. Halmahera RT/RW 02/02<br>Semanding, Kauman, Ponorogo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 text-center text-white-50">
+    <div class="container">
+      <small>&#169; 2026 Fiandra Dohan Hidayat. Portofolio untuk Uji Kompetensi Junior Web Developer.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/bootstrap.js"></script>
+</body>
+</html>

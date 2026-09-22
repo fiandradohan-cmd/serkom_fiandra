@@ -1,0 +1,246 @@
+/* ============================================
+   BATIK NUSANTARA — Theme
+   Palet: soga coklat, emas, krem, terracotta
+   ============================================ */
+
+:root {
+  --batik-soga: #5c3317;
+  --batik-soga-dark: #3d2314;
+  --batik-gold: #c9a227;
+  --batik-gold-light: #e8c547;
+  --batik-cream: #faf7f0;
+  --batik-cream-dark: #f0e6d2;
+  --batik-terracotta: #a0522d;
+  --batik-text: #2c1810;
+  --batik-muted: #6b5344;
+  --batik-border: #e0d5c5;
+  --batik-white: #fffefb;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--batik-cream) !important;
+  color: var(--batik-text);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* Header batik */
+.batik-header {
+  background: linear-gradient(180deg, var(--batik-white) 0%, var(--batik-cream) 100%);
+  border-bottom: 3px solid var(--batik-gold) !important;
+  box-shadow: 0 2px 12px rgba(92, 51, 23, 0.08);
+}
+
+.batik-header .nav-link-batik {
+  color: var(--batik-soga) !important;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: color 0.2s;
+}
+
+.batik-header .nav-link-batik:hover {
+  color: var(--batik-gold) !important;
+}
+
+.btn-batik {
+  background: var(--batik-soga) !important;
+  border-color: var(--batik-soga) !important;
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.btn-batik:hover {
+  background: var(--batik-soga-dark) !important;
+  border-color: var(--batik-soga-dark) !important;
+  color: #fff !important;
+}
+
+.btn-batik-outline {
+  background: transparent !important;
+  border: 2px solid var(--batik-soga) !important;
+  color: var(--batik-soga) !important;
+  font-weight: 600;
+}
+
+.btn-batik-outline:hover {
+  background: var(--batik-soga) !important;
+  color: #fff !important;
+}
+
+.btn-batik-gold {
+  background: var(--batik-gold) !important;
+  border-color: var(--batik-gold) !important;
+  color: var(--batik-soga-dark) !important;
+  font-weight: 700;
+}
+
+.btn-batik-gold:hover {
+  background: var(--batik-gold-light) !important;
+  border-color: var(--batik-gold-light) !important;
+}
+
+/* Hero section */
+.batik-hero {
+  background:
+    linear-gradient(135deg, rgba(92, 51, 23, 0.92) 0%, rgba(160, 82, 45, 0.85) 50%, rgba(61, 35, 20, 0.9) 100%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a227' fill-opacity='0.12'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.batik-hero .badge-batik {
+  display: inline-block;
+  background: var(--batik-gold);
+  color: var(--batik-soga-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 0.35rem 0.9rem;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.batik-hero h1 {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.batik-hero .lead {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Section titles */
+.section-title-batik {
+  color: var(--batik-soga);
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title-batik::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--batik-gold), transparent);
+  margin-top: 0.4rem;
+}
+
+/* Category pills */
+.kat-pill {
+  border: 1.5px solid var(--batik-border);
+  background: var(--batik-white);
+  color: var(--batik-muted);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.kat-pill:hover,
+.kat-pill.active {
+  background: var(--batik-soga);
+  border-color: var(--batik-soga);
+  color: #fff;
+}
+
+/* Product cards */
+.card-batik {
+  border: 1px solid var(--batik-border) !important;
+  background: var(--batik-white);
+  border-radius: 12px !important;
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card-batik:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(92, 51, 23, 0.15) !important;
+}
+
+.card-batik .price-batik {
+  color: var(--batik-terracotta);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.badge-kat {
+  background: var(--batik-cream-dark);
+  color: var(--batik-soga);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+
+/* Feature cards */
+.feature-batik {
+  background: var(--batik-white);
+  border: 1px solid var(--batik-border);
+  border-radius: 12px;
+  border-top: 3px solid var(--batik-gold);
+  transition: box-shadow 0.2s;
+}
+
+.feature-batik:hover {
+  box-shadow: 0 8px 24px rgba(92, 51, 23, 0.1);
+}
+
+/* Footer */
+.footer-batik {
+  background: linear-gradient(180deg, var(--batik-soga-dark) 0%, #1a0f0a 100%) !important;
+  color: #fff;
+  border-top: 3px solid var(--batik-gold);
+}
+
+.footer-batik a {
+  color: rgba(255, 255, 255, 0.7) !important;
+  transition: color 0.2s;
+}
+
+.footer-batik a:hover {
+  color: var(--batik-gold) !important;
+}
+
+.footer-batik .text-secondary {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* Admin / general overrides */
+.bg-light {
+  background-color: var(--batik-cream) !important;
+}
+
+.text-batik {
+  color: var(--batik-soga) !important;
+}
+
+.border-batik {
+  border-color: var(--batik-border) !important;
+}
+
+/* Ornament line */
+.ornament-line {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--batik-gold),
+    var(--batik-soga),
+    var(--batik-gold),
+    transparent
+  );
+  margin: 0.5rem 0 1.5rem;
+  max-width: 200px;
+}
+
+/* Search */
+.search-batik .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(201, 162, 39, 0.25);
+  border-color: var(--batik-gold);
+}
